@@ -32,7 +32,7 @@ function limparCampo(){
 }
 
 //Função para mostrar nomes adicionados à lista
-function mostrarNomesAdicionados(nome){
+function mostrarNomesAdicionados(){
     let itensLista = document.getElementById('listaAmigos');
     itensLista.innerHTML = "";
     for (let i=0; i < listaAmigos.length; i++){
@@ -40,13 +40,16 @@ function mostrarNomesAdicionados(nome){
         novoItemListaExibicao.textContent = listaAmigos[i];
         itensLista.appendChild(novoItemListaExibicao);
     }
-
 }
 
 
 
-function exibirNomeSelecionado(){
-
+function sortearAmigo(){
+    if(listaAmigos.innerHTML != ""){
+        let indiceSorteado = Math.floor(Math.random() * listaAmigos.length); //gerando índice aleatório da listaAmigos
+        let nomeSorteado = listaAmigos[indiceSorteado]; //cria uma variável para receber o valor do índice sorteado
+        document.getElementById('resultado').innerHTML = `O amigo sorteado foi ${nomeSorteado}`
+    }
 
 
 return
