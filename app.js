@@ -43,7 +43,7 @@ function mostrarNomesAdicionados(){
 }
 
 
-
+//Função para realizar sorteio de um nome
 function sortearAmigo(){
     if(listaAmigos.length != ""){
         let indiceSorteado = Math.floor(Math.random() * listaAmigos.length); //gerando índice aleatório da listaAmigos
@@ -54,4 +54,16 @@ function sortearAmigo(){
         return;
     }
 return
+}
+
+function reiniciarSorteio(){
+    limparCampoNomeSorteado();
+    listaAmigos=[]; //zerar array inicial dos nomes de amigos
+    mostrarNomesAdicionados();
+    limparCampo();
+}
+
+function limparCampoNomeSorteado(){
+    nomeAmigo = document.getElementById('resultado');
+    nomeAmigo.innerHTML = "";
 }
