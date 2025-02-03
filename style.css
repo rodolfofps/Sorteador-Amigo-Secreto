@@ -200,16 +200,19 @@ footer{
 }
 
 .name-list{
-    background-color: #e55720;
+    background-color: transparent;
     position: absolute;
     top: 50%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
+    left: 52%; /* Centraliza horizontalmente */
     transform: translate(-50%, -50%); /* Ajuste para garantir o centramento perfeito */
     margin: 0;
     padding: 0;
-    display: flex;
     justify-content: center; /* Alinha horizontalmente os itens */
     gap: 20px; /* Distância entre os itens da lista */
+    max-height: 200px;
+    overflow-y: auto;
+    /* border: 1px solid #ccc; */
+    width: 200px;
 }
 /* ==================================================================================================================== */
 @import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
