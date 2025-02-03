@@ -45,12 +45,13 @@ function mostrarNomesAdicionados(){
 
 
 function sortearAmigo(){
-    if(listaAmigos.innerHTML != ""){
+    if(listaAmigos.length != ""){
         let indiceSorteado = Math.floor(Math.random() * listaAmigos.length); //gerando índice aleatório da listaAmigos
         let nomeSorteado = listaAmigos[indiceSorteado]; //cria uma variável para receber o valor do índice sorteado
-        document.getElementById('resultado').innerHTML = `O amigo sorteado foi ${nomeSorteado}`
+        document.getElementById('resultado').innerHTML = `O amigo sorteado foi <strong>${nomeSorteado}</strong>`
+    }else{
+        alert("Não há itens na lista para sortear!");
+        return;
     }
-
-
 return
 }
