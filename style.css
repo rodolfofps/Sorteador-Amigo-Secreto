@@ -344,3 +344,29 @@ h1 span:nth-child(14) {
       0 50px 25px rgba(0, 0, 0, 0.2);
   }
 }
+
+@media screen and (max-width: 768px){
+  .main-content{
+    display: block;
+    background-image: none;
+    margin-left: 26rem;
+  }
+
+.main-title span{
+  font-size: 2rem;
+  display: inline-block;
+  margin-left: 0.5rem;
+  left: 0.1px;
+}
+
+.header-banner{
+  position: relative;
+  margin-left: -120%;
+}
+
+.header-banner .name-list{
+margin-left: 18rem;
+}
+
+}
+  
