@@ -1,190 +1,190 @@
 :root {
-    --color-primary: #618882;
-    --color-secondary: #FFF9EB;
-    --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
-    --color-text: #444444;
-    --color-white: #FFFFFF;
+  --color-primary: #618882;
+  --color-secondary: #FFF9EB;
+  --color-tertiary: #C4C4C4;
+  --color-button: #fe652b;
+  --color-button-hover: #e55720;
+  --color-text: #444444;
+  --color-white: #FFFFFF;
 }
 
 /* Estilos gerais */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    background-color: var(--color-primary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-content {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  text-align: left;
 }
 
 /* Banner */
 .header-banner {
-    position: relative;
-    flex: 40%;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    padding: 40px 380px 0;
-    margin-left: 10%;
+  position: relative;
+  flex: 40%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 40px 380px 0;
+  margin-left: 10%;
 }
 
 
 /* Seção de entrada */
 .input-section {
-    flex: 60%;
-    background-color: var(--color-secondary);
-    border: 1px solid #000;
-    border-radius: 64px 64px 0 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    width: 100%;
+  flex: 60%;
+  background-color: var(--color-secondary);
+  border: 1px solid #000;
+  border-radius: 64px 64px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  width: 100%;
 }
 
-.input-section .section-title{
-    font-family: "Luckiest Guy", cursive;
+.input-section .section-title {
+  font-family: "Luckiest Guy", cursive;
 
-} 
+}
 
 /* Títulos */
 .main-title {
-    font-size: 48px;
-    font-family: "Merriweather", serif;
-    font-weight: 900;
-    font-style: italic;
-    color: var(--color-white);
-    margin: 60px 120px;
-   
-   
+  font-size: 48px;
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: italic;
+  color: var(--color-white);
+  margin: 60px 120px;
+
+
 }
 
 .section-title {
-    font-family: "Inter", serif;
-    font-size: 36px;
-    font-weight: 700;
-    color: var(--color-primary);
-    margin: 10px 0;
-    text-align: center;
+  font-family: "Inter", serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 10px 0;
+  text-align: center;
 }
 
 /* Contêineres de entrada e botão */
 .input-wrapper {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: 600px;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
 }
 
 .input-name {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #000;
-    border-radius: 25px 0 0 25px;
-    font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 25px 0 0 25px;
+  font-size: 16px;
 }
 
 .button-container {
-    width: 300px;
-    justify-content: center;
+  width: 300px;
+  justify-content: center;
 }
 
 /* Estilos de entrada de texto */
 .input-title {
-    flex: 1;
-    padding: 10px 15px;
-    font-size: 16px;
-    border: 2px solid #333;
-    border-right: none;
-    border-radius: 25px 0 0 25px;
-    font-family: "Merriweather", serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #333;
+  border-right: none;
+  border-radius: 25px 0 0 25px;
+  font-family: "Merriweather", serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Estilos de botão */
 button {
-    padding: 15px 30px;
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    border: 2px solid #000;
-    border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
+  padding: 15px 30px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  border: 2px solid #000;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 .button-add {
-    background-color: var(--color-tertiary);
-    color: var(--color-text);
-    border-radius: 0 25px 25px 0;
+  background-color: var(--color-tertiary);
+  color: var(--color-text);
+  border-radius: 0 25px 25px 0;
 }
 
 .button-add:hover {
-    background-color: #a1a1a1;
+  background-color: #a1a1a1;
 }
 
 /* Listas */
 ul {
-    list-style-type: none;
-    color: var(--color-text);
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
-    margin: 20px 0;
+  list-style-type: none;
+  color: var(--color-text);
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  margin: 20px 0;
 }
 
 .result-list {
-    margin-top: 15px;
-    color: #05DF05;
-    font-size: 22px;
-    font-weight: bold;
-    text-align: center;
+  margin-top: 15px;
+  color: #05DF05;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
 }
 
 /* Botão de sortear título */
 .button-draw {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 10px 40px;
-    color: var(--color-white);
-    background-color: var(--color-button);
-    font-size: 16px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 40px;
+  color: var(--color-white);
+  background-color: var(--color-button);
+  font-size: 16px;
 }
 
 .button-draw img {
-    margin-right: 40px;
+  margin-right: 40px;
 }
 
 .button-draw:hover {
-    background-color: var(--color-button-hover);
+  background-color: var(--color-button-hover);
 }
 
 .header_text {
-    font-family: monospace;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 0.15em solid black;
-    animation: caret 0.75s steps(1) infinite;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid black;
+  animation: caret 0.75s steps(1) infinite;
 }
 
 @keyframes caret {
-    50% {
-        border-color: transparent;
-    }
+  50% {
+    border-color: transparent;
+  }
 }
 
 /*Imagem de background*/
@@ -193,29 +193,42 @@ ul {
     
 } */
 
-footer{
-    font-family: "Inter", sans-serif;
-    display: flex;
-    justify-content: center;
+footer {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  }
+
+  .content-footer a{
+    margin-bottom: 20em;
+
+  }
+
+
+.name-list {
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  /* Centraliza verticalmente */
+  left: 52%;
+  /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%);
+  /* Ajuste para garantir o centramento perfeito */
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  /* Alinha horizontalmente os itens */
+  gap: 20px;
+  /* Distância entre os itens da lista */
+  max-height: 200px;
+  overflow-y: auto;
+  /* border: 1px solid #ccc; */
+  width: 200px;
 }
 
-.name-list{
-    background-color: transparent;
-    position: absolute;
-    top: 50%; /* Centraliza verticalmente */
-    left: 52%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /* Ajuste para garantir o centramento perfeito */
-    margin: 0;
-    padding: 0;
-    justify-content: center; /* Alinha horizontalmente os itens */
-    gap: 20px; /* Distância entre os itens da lista */
-    max-height: 200px;
-    overflow-y: auto;
-    /* border: 1px solid #ccc; */
-    width: 200px;
-}
 /* ==================================================================================================================== */
 @import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
+
 /* BODY */
 body {
   position: absolute;
@@ -237,6 +250,7 @@ body {
 ::selection {
   background: transparent;
 }
+
 /* CLOUDS */
 body:before {
   content: "";
@@ -256,6 +270,7 @@ body:before {
     550px 0 300px 200px rgba(255, 255, 255, 0.6),
     -550px 0 300px 200px rgba(255, 255, 255, 0.6);
 }
+
 /* JUMP */
 h1 {
   cursor: default;
@@ -345,28 +360,27 @@ h1 span:nth-child(14) {
   }
 }
 
-@media screen and (max-width: 768px){
-  .main-content{
+@media screen and (max-width: 768px) {
+  .main-content {
     display: block;
     background-image: none;
     margin-left: 26rem;
   }
 
-.main-title span{
-  font-size: 2rem;
-  display: inline-block;
-  margin-left: 0.5rem;
-  left: 0.1px;
-}
+  .main-title span {
+    font-size: 2rem;
+    display: inline-block;
+    margin-left: 0.5rem;
+    left: 0.1px;
+  }
 
-.header-banner{
-  position: relative;
-  margin-left: -120%;
-}
+  .header-banner {
+    position: relative;
+    margin-left: -120%;
+  }
 
-.header-banner .name-list{
-margin-left: 18rem;
-}
+  .header-banner .name-list {
+    margin-left: 18rem;
+  }
 
 }
-  
