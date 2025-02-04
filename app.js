@@ -60,6 +60,7 @@ document.getElementById('resultado').innerHTML = `O amigo sorteado foi <strong>$
 
 if (nomesSorteados.length === listaAmigos.length){
     alert("Todos nomes já foram sorteados!");
+    document.getElementById('btnSortear').disabled = true;
     }
 }
 
@@ -71,7 +72,7 @@ function reiniciarSorteio(){
     mostrarNomesAdicionados();
     limparCampo();
     limparCampoNomeSorteado();
-    
+    document.getElementById('btnSortear').disabled = false;
 }
 
 function limparCampoNomeSorteado(){
