@@ -70,7 +70,7 @@ Estou sempre aberto para trocar ideias e compartilhar conhecimentos! 🚀
 
 **💼[Vamos conversar no LinkedIn](https://www.linkedin.com/in/rodolfofps/)**</br>
 **💻[Confira meus projetos no GitHub](https://github.com/rodolfofps/)**</br>
-**🌍[Dá uma conferida na aplicação lá na rede!](https://sorteador-amigo-secreto-puce.vercel.app/))**
+**🌍[Dá uma conferida na aplicação lá na rede!](https://sorteador-amigo-secreto-puce.vercel.app/)**
 
 ---
 
