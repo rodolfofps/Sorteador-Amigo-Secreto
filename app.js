@@ -1,6 +1,6 @@
 
 let listaAmigos = [];
-
+let nomesSorteados = [];
 
 // Adição de nome de amigos à lista
 function adicionarAmigos(){
@@ -45,25 +45,37 @@ function mostrarNomesAdicionados(){
 
 //Função para realizar sorteio de um nome
 function sortearAmigo(){
-    if(listaAmigos.length != ""){
-        let indiceSorteado = Math.floor(Math.random() * listaAmigos.length); //gerando índice aleatório da listaAmigos
-        let nomeSorteado = listaAmigos[indiceSorteado]; //cria uma variável para receber o valor do índice sorteado
-        document.getElementById('resultado').innerHTML = `O amigo sorteado foi <strong>${nomeSorteado}</strong>`
-    }else{
-        alert("Não há itens na lista para sortear!");
-        return;
+if(listaAmigos.length == 0){
+    alert("Não há itens na lista para sortear!");
+    return;
+}
+    let nomeSorteado    
+do{
+   let indiceSorteado = Math.floor(Math.random() * listaAmigos.length);
+   nomeSorteado = listaAmigos[indiceSorteado]; //obtém o valor do índice 
+}while(nomesSorteados.includes(nomeSorteado)); //verificação condicional, se já foi sorteado
+
+nomesSorteados.push(nomeSorteado); 
+document.getElementById('resultado').innerHTML = `O amigo sorteado foi <strong>${nomeSorteado}</strong>`;
+
+if (nomesSorteados.length === listaAmigos.length){
+    alert("Todos nomes já foram sorteados!");
     }
-return
 }
 
+
+
 function reiniciarSorteio(){
-    limparCampoNomeSorteado();
     listaAmigos=[]; //zerar array inicial dos nomes de amigos
+    nomesSorteados = [];
     mostrarNomesAdicionados();
     limparCampo();
+    limparCampoNomeSorteado();
+    
 }
 
 function limparCampoNomeSorteado(){
     nomeAmigo = document.getElementById('resultado');
     nomeAmigo.innerHTML = "";
 }
+
