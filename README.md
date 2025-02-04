@@ -59,7 +59,10 @@ A aplicação foi feita para ser simples e prática! Aqui está o passo a passo 
 3️⃣ **Visualize a lista de amigos**: Conforme você for adicionando os nomes, uma lista com todos os amigos aparecerá na tela.
 
 4️⃣ **Clique em "Sortear amigo"**: Depois de inserir todos os nomes, clique neste botão para realizar o sorteio. O nome do amigo sorteado aparecerá na tela.
-    O sorteio pode ser feito clicando no botão até que uma notificação de que todos os nomes da lista já foram sorteados apareça.
+    O sorteio pode ser feito clicando no botão até que uma notificação de que todos os nomes da lista já foram sorteados apareça.</br>
+    NOTA 1: Ao clicar no botão de sorteio na penúltima vez, a notificação de que todos os nomes já foram sorteados aparecerá, daí ao clicar em Ok o último nome
+    será exibido na tela.</br>
+    NOTA 2: Ao exibir o último nome sorteado, por segurança, a função do botão de sorteio fica desailitada, guiando o usuário a reiniciar a aplicação conforme a etapa seguinte.
 
 5️⃣ **Reinicie a aplicação**: Caso queira começar tudo de novo, basta clicar em **"Reiniciar"** para limpar os dados e começar um novo sorteio.
 
